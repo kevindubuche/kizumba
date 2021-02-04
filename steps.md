@@ -40,3 +40,6 @@
 >>>pip3 install pipreqs
 >>> pipreqs .
 2.  [] Create .travis.yml file
+3.  [] set up setting.py
+>>> import os
+>>>'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
