@@ -1,0 +1,13 @@
+{% extends 'dancers/base.html' %}
+
+{% block body %}
+    <ul>
+        {% for dancer in dancers %}
+            <li>
+                <a href="#">{{dancer}}</a>
+            </li>
+        {% empty %}
+            <li>No dancer.</li>
+        {% endfor %}
+    </ul>
+{% endblock body %}

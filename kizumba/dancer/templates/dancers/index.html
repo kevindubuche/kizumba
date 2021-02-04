@@ -1,0 +1,154 @@
+{% extends 'dancers/base.html' %}
+{% load static %}
+{% block body %}
+<div id="trainings" class="layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text_align_center">
+            <h2 class="heading_section">TRAININGS</h3>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="trainings_blog" class="layout_padding" style="background: #b52f3c;">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4">
+            <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+               Ut enim ad minim veniam, quis nostrud</p>
+         </div>
+         <div class="col-md-8 video_img">
+            <img class="img-responsive" src="{% static 'imgs/v1.jpg' %}" alt="#" />
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="classes" class="layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text_align_center">
+            <h2 class="heading_section" style="margin-bottom: 65px;">Classes</h3>
+         </div>
+      </div>
+      <div class="row">
+         
+         <div class="col-md-4">
+            <div class="full dance_form_name">
+               <img src="{% static 'imgs/d1.jpg' %}" alt="#" />
+               <h4>Ballet</h4>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="full dance_form_name">
+               <img src="{% static 'imgs/d2.jpg' %}" alt="#" />
+               <h4>People</h4>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="full dance_form_name">
+               <img src="{% static 'imgs/d1.jpg' %}" alt="#" />
+               <h4>Group Dance</h4>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="full dance_form_name">
+               <img src="{% static 'imgs/d3.jpg' %}" alt="#" />
+               <h4>Dancers</h4>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="full dance_form_name">
+               <img src="{% static 'imgs/d4.jpg' %}" alt="#" />
+               <h4>Dancing</h4>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="full dance_form_name">
+               <img src="{% static 'imgs/d5.jpg' %}" alt="#" />
+               <h4>Girl</h4>
+            </div>
+         </div>
+      
+      </div>
+   </div>
+</div>
+
+<div id="shows">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-6" style="background: #b52f3c;min-height: 450px">
+            <div class="full">
+               <div class="opening_hour_blog">
+                  <h3>Opening Hours</h3>
+                  <ul>
+                     <li>Hip Hop Dance : 07:00 – 21:00</li>
+                     <li>Ballet : 09:00 – 21:00</li>
+                     <li>Break Dance : 18:00 – 24:00</li>
+                     <li>Salsa : 18:00 – 22:00</li>
+                     <li>Tab Dancing : 19:00 – 23:00</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6" style="background:url('/static/imgs/oh.jpg');background-size: cover;">
+            <div class="full">
+            </div>
+         </div>
+      </div>  
+   </div>
+</div>
+
+<div id="shortcides" class="layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text_align_center" style="margin-bottom: 50px;">
+            <h2 class="heading_section">SHORTCODE</h3>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-5">
+            <img class="img-responsive" src="{% static 'imgs/gitar.jpg' %}" />
+         </div>
+         <div class="col-md-7">
+            <img class="img-responsive" src="{% static 'imgs/img_layout.jpg' %}" alt="#" />
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="contact" class="layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 text_align_center">
+            <h2 class="heading_section">Contact us</h3>
+         </div>
+      </div>
+   </div>
+</div>
+<div id="trainings_blog" class="layout_padding" style="background: #b52f3c;">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-5">
+            <div class="contact-form">
+               <form>
+                  <input type="text" placeholder="Your Name" />
+                  <input type="text" placeholder="Phone Number" />
+                  <input type="email" placeholder="Email" />
+                  <textarea placeholder="Message"></textarea>
+                  <input type="submit" value="Send">
+               </form>
+            </div>
+         </div>
+         <div class="col-md-7 text_align_center">
+            <img class="img-responsive" src="{% static 'imgs/map_img.jpg' %}" alt="#" />
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock body %}
