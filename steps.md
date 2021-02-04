@@ -37,5 +37,6 @@
 
 ......... CI/CD ............
 1.  [] To genarate all requirements of the project
->>> pip3 freeze > requirements.txt
+>>>pip3 install pipreqs
+>>> pipreqs .
 2.  [] Create .travis.yml file
