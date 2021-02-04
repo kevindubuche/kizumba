@@ -5,3 +5,4 @@ install:
   - pip install -r requirements.thx
 script:
   - python manage.py test
+  
