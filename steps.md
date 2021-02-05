@@ -43,3 +43,33 @@
 3.  [] set up setting.py
 >>> import os
 >>>'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+4.  [] Push to github
+
+........DOCKER..........
+1.  [] Create a Dockerfile in the root directory
+1.  [] link to add pgadmin:
+>>>https://www.postgresql.org/download/linux/ubuntu/
+>>>sudo -u postgres psql
+>>>ALTER USER postgres PASSWORD 'newPassword';
+2.  [] Create a docker-compose.yml file in the root directory
+1.  [] To start up my web app:
+>>> docker-compose up
+3.  [] To build docker image:
+>>>docker build -t kevindubuche/kizumba .
+4.  [] To test docker image locally:
+>>>docker run kevindubuche/kizumba
+5.  []To push your Docker image to Docker Hub
+>>>docker push kevindubuche/kizumba
+
+.....Heroku.....NOT OK
+1.  [] Login
+>>> heroku login
+2.  [] Sing into Container Registry
+>>> heroku container:login
+3.  [] Push your Docker-based app:
+>>>heroku container:push web --app kizumba
+4. [] Deploy the changes:
+>>>heroku container:release web --app kizumba
+
+2.  [] Create a Procfile
+3.  [] Add gunicorn to requirement.txt file
